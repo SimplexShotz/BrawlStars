@@ -62,7 +62,7 @@
   </head>
   <body>
     <div id="header">
-      <h1>| Brawl Stars – The Mobile Gaming Revolution |</h1>
+      <h1 id="header-text">| Brawl Stars – The Mobile Gaming Revolution |</h1>
     </div>
     <div id="content">
       <h1 class="title">Brawl Stars</h1>
@@ -116,21 +116,22 @@
           document.getElementById("content").style.margin = "0px";
           document.getElementById("footer").style.fontSize = "10px";
           for (var i = 0; i < document.getElementsByTagName("h1").length; i++) {
-            document.getElementsByTagName("h1")[i].style.fontSize = "40pt";
+            document.getElementsByTagName("h1")[i].style.fontSize = "80pt";
           }
           for (var i = 0; i < document.getElementsByTagName("p").length; i++) {
-            document.getElementsByTagName("p")[i].style.fontSize = "20pt";
-            document.getElementsByTagName("p")[i].style.lineHeight = "36pt";
+            document.getElementsByTagName("p")[i].style.fontSize = "40pt";
+            document.getElementsByTagName("p")[i].style.lineHeight = "72pt";
           }
           for (var i = 0; i < document.getElementsByTagName("h2").length; i++) {
-            document.getElementsByTagName("h2")[i].style.fontSize = "30pt";
+            document.getElementsByTagName("h2")[i].style.fontSize = "60pt";
           }
           for (var i = 0; i < document.getElementsByTagName("img").length; i++) {
             document.getElementsByTagName("img")[i].style.width = "100%";
           }
           for (var i = 0; i < document.getElementsByClassName("name").length; i++) {
-            document.getElementsByClassName("name")[i].style.fontSize = "16pt";
+            document.getElementsByClassName("name")[i].style.fontSize = "30pt";
           }
+          document.getElementById("header-text").style.fontSize = "40pt";
         }, 0);
       }
     </script>
