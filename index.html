@@ -114,8 +114,8 @@
       This website is not affiliated with, maintained, authorized, endorsed or sponsored by Supercell or any of its affiliates.
     </div>
     <script>
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-        setTimeout(() => {
+      window.onload = function() {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
           document.getElementById("content").style.margin = "0px";
           document.getElementById("content").style.width = "calc(100% - 200px)";
           document.getElementById("footer").style.fontSize = "20px";
@@ -138,8 +138,8 @@
             document.getElementsByClassName("name")[i].style.fontSize = "30pt";
           }
           document.getElementById("header-text").style.fontSize = "40pt";
-        }, 0);
-      }
+        }
+      };
     </script>
   </body>
 </html>
